@@ -180,7 +180,7 @@ namespace TicTacToe
         // have the same value - doesn't even matter what the value is
         // as long as it's the same!
         
-            for (int rowCount = 0; rowCount < squares.GetUpperBound(0); rowCount++)
+            for (int rowCount = 0; rowCount <= squares.GetUpperBound(0); rowCount++)
             {
                 if (squares[rowCount, 0].Text != String.Empty &&
                     squares[rowCount, 0].Text == squares[rowCount, 1].Text &&
